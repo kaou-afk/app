@@ -1,0 +1,15 @@
+<div class="Form">
+  <p class="t1">Connexion</p>
+
+  <input class="champ" type="text" placeholder="Login" id="login" [(ngModel)]="login">
+  <input class="champ" type="password" placeholder="Password" [(ngModel)]="password">
+  <div class="SectionForgot">
+    <label for="teste">
+    <input class="checkbox" id="teste" type="checkbox" (change)="onNativeChange($event)">
+    <ion-icon id="test" class="checkmark-outline" name="checkmark-outline"></ion-icon>
+    </label>
+    <p class="t2">Mémoriser info</p>
+  </div>
+  <input class="button" type="button" value="Connexion" (click)="Connexion()">
+ 
+</div>

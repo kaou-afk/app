@@ -1,0 +1,140 @@
+.TabBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 76px;
+    align-items: center;
+    background-color: #191C22;
+    color: #C8C8D2;
+  }
+  
+  .TabBarIcon{
+    margin: 13px;
+  } 
+
+  #Setting{
+    color: #1DAEFF;
+  }
+
+  .container{
+    position: relative;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 76px;
+  }
+
+  .t1{
+    padding-left: 20px;
+    width: 325px;
+    height: 90px;
+    left: 20px;
+    top: 137px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0px;
+    
+  }
+
+  .slideTwo {
+    width: 48.56px;
+    height: 21.85px;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    align-items: center;
+    display: grid;
+    z-index: 2;
+  }
+  
+  .slideTwo div {
+    display: block;
+    width: 16.99px;
+    height: 16.99px;
+  
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+  
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    background: #fcfff4;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+  }
+  
+  input[type=radio]{
+    display: none;
+  }
+  #dark{
+    background: #1DAEFF;
+  }
+
+  #light{
+    background: #616161;
+  }
+
+  
+
+  .slideTwo input[type=radio]:checked + div {
+    left: 27.57px;
+  }
+
+  .button{
+    width: 272.33px;
+    height: 40.85px;
+    text-align: center;
+    border: none;
+    z-index: 2;
+    position: relative;
+    color: #FFFFFF;
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29.05px;
+    background: #CA3030;
+}
+
+.t2{
+  display: block;
+  width: 127px;
+  height: 28px;
+  left: 46px;
+  top: 312px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+  
+  letter-spacing: -0.015em;
+  
+  color: #FFFFFF;
+}
+
+.sombreContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.clairContainer{
+  display: flex;
+  justify-content: space-around;
+}

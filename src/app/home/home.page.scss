@@ -1,0 +1,71 @@
+.TabBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 76px;
+  align-items: center;
+  background-color: #191C22;
+  color: #C8C8D2;
+}
+
+.TabBarIcon{
+  margin: 13px;
+}
+
+#Home{
+  color: #1DAEFF;
+}
+
+.t1{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.container2{
+  position: absolute;
+  top: 138px; 
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.container{
+  position: relative;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 76px;
+}
+
+.t2{
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
+
+.t3{
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  letter-spacing: -0.055em;
+
+  color: rgba(255, 255, 255, 0.5);
+}

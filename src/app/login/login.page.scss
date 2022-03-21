@@ -1,0 +1,107 @@
+.champ{
+    width: 272.33px;
+    height: 40.85px;
+    padding-left: 22px;
+    border: none;
+    z-index: 2;
+    position: relative;
+    color: #FFFFFF;
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29.05px;
+    
+/* Dark */
+    background: #3C484D;
+  }
+
+  .champ::placeholder {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+  }
+
+  .champ:focus::placeholder {
+    color: #ffffff00;
+  }
+
+  .champ:focus {
+    outline: none;
+  }
+
+  .t1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+  }
+  .Form{
+    position: absolute;
+    width: 100%;
+    top: 263px;
+  }
+  .t2{
+      position: relative;
+      width: 127px;
+      height: 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      margin-left: 25px;
+  }
+
+  .checkbox{
+      display: block;
+      position: absolute;
+      width: 16.34px;
+      height: 15.43px;
+      display:none;
+  }
+  
+  .SectionForgot{
+      position: relative;
+      width: 150px;
+      height: 15.43px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .button{
+      width: 272.33px;
+      height: 40.85px;
+      text-align: center;
+      border: none;
+      z-index: 2;
+      position: relative;
+      color: #FFFFFF;
+      display: block;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 29.05px;
+      background: #1DAEFF;
+  }
+  label{
+      position: absolute;
+      width: 16.34px;
+      height: 15.43px;
+      border-radius: 5px;
+      display: inline-block;
+      /* Dark */
+      background: #3C484D;
+      }
+
+  .checkmark-outline{
+    color: rgb(255, 255, 255);
+    display: none;
+  }
+  

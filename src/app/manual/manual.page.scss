@@ -1,0 +1,140 @@
+.TabBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 76px;
+    align-items: center;
+    background-color: #191C22;
+    color: #C8C8D2;
+  }
+  
+  .TabBarIcon{
+    margin: 13px;
+  }
+  
+  #Manual{
+    color: #1DAEFF;
+  }
+
+  .t1{
+    padding-left: 20px;
+    width: 325px;
+    height: 90px;
+    left: 20px;
+    top: 137px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    
+  }
+
+  .container{
+    position: relative;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 76px;
+  }
+
+  .cibleContainer{
+    width: 315px;
+    height: 135px;
+    left: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 277px;
+    /* Dark */
+    background: #3C484D;
+    margin-top: 18px;
+  }
+
+  .cible{
+    width: 86px;
+    height: 106.55px;
+    border-radius: 10px;
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 2;
+    display: block;
+    background: #E1EBF1;
+  }
+
+  .scoreContainer{
+    width: 315px;
+    height: 118px;
+    left: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 277px;
+    /* Dark */
+    background: #1B1E24;
+    margin-top: 23px;
+  }
+
+  .score{
+    width: 68px;
+    height: 63.55px;
+    background: #E1EBF1;
+    border-radius: 10px;
+    border: none;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    color: #393D3F;
+  }
+
+  #c1_1{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  #c1_2{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  #c2_1{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  #c2_2{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  .t2{
+    width: 68px;
+    height: 64px;
+    background: #535457;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }

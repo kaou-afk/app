@@ -1,0 +1,135 @@
+.TabBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 76px;
+    align-items: center;
+    background-color: #191C22;
+    color: #C8C8D2;
+  }
+  
+  .TabBarIcon{
+    margin: 13px;
+  }
+
+  #Automatic{
+    color: #1DAEFF;
+  }
+
+  .scoreContainer{
+    width: 315px;
+    height: 118px;
+    left: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 277px;
+    /* Dark */
+    background: #1B1E24;
+  }
+
+  .score{
+    width: 68px;
+    height: 63.55px;
+    background: #E1EBF1;
+    border-radius: 10px;
+    border: none;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    color: #393D3F;
+  }
+
+  .container{
+    position: relative;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 76px;
+  }
+  .t1{
+    padding-left: 20px;
+    width: 325px;
+    height: 90px;
+    left: 20px;
+    top: 137px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0px;
+    
+  }
+
+  #start{
+    display:inline-block;
+    border:#666 1px solid;
+    margin:2px;
+    font-size:24px;
+    cursor:pointer;
+    width:103px;
+    height:103px;
+    border-radius:50%;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    background: #616161;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+  #c1_1{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  #c1_2{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  #c2_1{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  #c2_2{
+    width: 52.61px;
+    height: 88.44px;
+  }
+
+  .t2{
+    width: 68px;
+    height: 64px;
+    background: #535457;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+
+  .starticon{
+    color: rgb(255, 255, 255);
+    width: 51.5px;
+    height: 51.5px;
+  }
