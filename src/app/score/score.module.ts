@@ -8,12 +8,15 @@ import { ScorePageRoutingModule } from './score-routing.module';
 
 import { ScorePage } from './score.page';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ScorePageRoutingModule
+    ScorePageRoutingModule,
+    HttpClientModule
   ],
   declarations: [ScorePage]
 })

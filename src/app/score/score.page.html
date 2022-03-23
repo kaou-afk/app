@@ -2,15 +2,16 @@
 <div class="container">
   <p class="t1">Ajouter score</p>
   <p class="t2">Nom du tireur</p>
-  <input list="nomsTireurs" id="nomTireur" name="nomTireur" placeholder="|Recherche"/>
-  <datalist id="nomsTireurs">
-    <option value="Marcus Fenix">
+  <input list="nomsTireurs" id="nomTireur" name="nomTireur" placeholder="|Recherche" list="codes" [(ngModel)]="codeValue" (change)="saveCode($event)"/>
+  <datalist  id="codes">
+    <option *ngFor="let t of tireurList"
+    [value]="t.prenom + ' ' + t.nom"></option>
   </datalist>
   <p class="t2">Score</p>
   <div class="score">
-    <p class="t3">0</p>
+    <p class="t3">{{score}}</p>
   </div>
-  <input class="button" id="envoyer" type="button" value="Envoyer">
+  <input class="button" id="envoyer" type="button" value="Envoyer" (click)="Envoyer()">
   <input class="button" id="reinitialiser" type="button" value="Réinitialiser">
 </div>
 

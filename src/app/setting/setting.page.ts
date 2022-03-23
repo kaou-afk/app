@@ -23,22 +23,12 @@ export class SettingPage implements OnInit {
       document.getElementById('dark').style.setProperty('background', '#1DAEFF')
       document.getElementById('light').style.setProperty('background' , '#616161');
     }
-    else{
-      document.getElementById('dark').style.setProperty('background', '#616161')
-      document.getElementById('light').style.setProperty('background' , '#1DAEFF');
-    }
-
   }
   onLightChange(e){
     if(e.target.checked){
       document.getElementById('light').style.setProperty('background' , '#1DAEFF');
       document.getElementById('dark').style.setProperty('background', '#616161')
     }
-    else{
-      document.getElementById('light').style.setProperty('background' , '#616161');
-      document.getElementById('dark').style.setProperty('background', '#1DAEFF')
-    }
-
   }
 }
 
