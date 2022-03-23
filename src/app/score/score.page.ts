@@ -13,24 +13,20 @@ export class ScorePage implements OnInit {
   }
 
   ngOnInit() {
+    this.API()
   }
 
   public codeValue: string;
 
-  public tireurList =  {
-    id: 0,
-    nom: '',
-    prenom: '',
-  };
+  public tireurList = [];
 
   idUtilisateur: number;
   score: string = '42';
 
   API(){
     this.http.get('http://localhost/api/utilisateur/rechercherTous.php') .subscribe((data) => { 
-      this.tireurList.id = data['id'];
-      this.tireurList.nom = data['nom'];
-      this.tireurList.prenom = data['prenom'];
+      this.tireurList = Object.values(data['Utilisateurs']);;
+      console.log(this.tireurList);
     });
   }
 
