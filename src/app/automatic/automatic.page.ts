@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-automatic',
@@ -6,19 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./automatic.page.scss'],
 })
 export class AutomaticPage implements OnInit {
+  score: number;
+  start=0;
 
-  constructor() { }
+  constructor(private AppComponent: AppComponent) {
+    this.score=AppComponent.getScore();
+   }
 
   ngOnInit() {
   }
-  score = 0;
-  start=0;
 
   incremente(){// incrémenter score +1
     this.score = this.score+1;
+    this.AppComponent.addScore();
   }
   decremente(){// décrémenter score -1
     this.score = this.score-1;
+    this.AppComponent.susScore();
   }
   startAutoMode(){
     if (this.start==0){

@@ -5,14 +5,14 @@
   <input list="nomsTireurs" id="nomTireur" name="nomTireur" placeholder="|Recherche" list="codes" [(ngModel)]="codeValue" (change)="saveCode($event)"/>
   <datalist  id="codes">
     <option *ngFor="let t of tireurList"
-    [value]="t.prenom + ' ' + t.nom"></option>
+    [value]="t.prenom + ' ' + t.nom">{{t.email}}</option>
   </datalist>
   <p class="t2">Score</p>
   <div class="score">
     <p class="t3">{{score}}</p>
   </div>
   <input class="button" id="envoyer" type="button" value="Envoyer" (click)="Envoyer()">
-  <input class="button" id="reinitialiser" type="button" value="Réinitialiser" (click)="API()">
+  <input class="button" id="reinitialiser" type="button" value="Réinitialiser" (click)="Reinitialiser()">
 </div>
 
  <ion-tabs>

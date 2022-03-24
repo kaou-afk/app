@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-manual',
@@ -6,18 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manual.page.scss'],
 })
 export class ManualPage implements OnInit {
-
-  constructor() { 
+  score: number;
+  constructor(private AppComponent: AppComponent) {
+    this.score=AppComponent.getScore();
   }
 
   ngOnInit() {
   }
-  score = 0;
 
   incremente(){// incrémenter score +1
     this.score = this.score+1;
+    this.AppComponent.addScore();
   }
+
   decremente(){// décrémenter score -1
     this.score = this.score-1;
+    this.AppComponent.susScore();
+
   }
 }

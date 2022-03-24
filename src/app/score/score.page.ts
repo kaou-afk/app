@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-score',
@@ -9,19 +10,17 @@ import { HttpClient } from '@angular/common/http';
 
 export class ScorePage implements OnInit {
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient, private AppComponent: AppComponent) { 
   }
 
   ngOnInit() {
     this.API()
   }
 
-  public codeValue: string;
-
   public tireurList = [];
 
   idUtilisateur: number;
-  score: string = '42';
+  score: number = this.AppComponent.getScore();
 
   API(){
     this.http.get('http://localhost/api/utilisateur/rechercherTous.php') .subscribe((data) => { 
@@ -44,6 +43,11 @@ export class ScorePage implements OnInit {
       (x) => x?.prenom + ' ' + x?.nom === e.target.value);
     console.log(find?.id);
     this.idUtilisateur = find?.id;
+  }
+
+  Reinitialiser(){
+    this.score=0;
+    this.AppComponent.reset();
   }
 
 
