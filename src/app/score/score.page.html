@@ -2,7 +2,7 @@
 <div class="container">
   <p class="t1">Ajouter score</p>
   <p class="t2">Nom du tireur</p>
-  <input list="nomsTireurs" id="nomTireur" name="nomTireur" placeholder="|Recherche" list="codes" [(ngModel)]="codeValue" (change)="saveCode($event)"/>
+  <input list="nomsTireurs" id="nomTireur" name="nomTireur" placeholder="|Recherche" list="codes" [(ngModel)]="codeValue" (change)="saveCode($event)" autocomplete="off"/>
   <datalist  id="codes">
     <option *ngFor="let t of tireurList"
     [value]="t.prenom + ' ' + t.nom">{{t.email}}</option>
