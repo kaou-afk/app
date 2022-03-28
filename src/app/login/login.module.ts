@@ -9,7 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 
 import { HttpClientModule } from '@angular/common/http';
-import * as Pbkdf2 from 'pbkdf2';
+
 
 
 @NgModule({
