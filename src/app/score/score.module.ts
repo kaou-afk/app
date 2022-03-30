@@ -10,7 +10,6 @@ import { ScorePage } from './score.page';
 
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   imports: [
     CommonModule,
