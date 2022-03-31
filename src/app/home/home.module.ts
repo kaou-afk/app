@@ -6,6 +6,8 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
@@ -13,6 +15,7 @@ import { NgChartsModule } from 'ng2-charts';
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     NgChartsModule,
     HomePageRoutingModule
   ],
