@@ -17,6 +17,7 @@ export class LoginPage implements OnInit {
   }
 
   movieData = {
+    id: '',
     password: '',
   };
 
@@ -48,9 +49,13 @@ export class LoginPage implements OnInit {
   verifier(){ // fonction vérifier mots et email
     if(this.movieData.password==this.chiffrer(this.password) && this.movieData.password!=null){
       console.log('ok');
-      sessionStorage.setItem('authenticated','1');
-      if (this.remember){
+      if (this.remember){ // local stockage
         localStorage.setItem('authenticated','1');
+        localStorage.setItem('id',this.movieData.id);
+      }
+      else{ // sesion stockage
+        sessionStorage.setItem('authenticated','1');
+        sessionStorage.setItem('id',this.movieData.id);
       }
       this.router.navigateByUrl('/home');
     }
@@ -67,6 +72,7 @@ export class LoginPage implements OnInit {
     this.readAPI('http://localhost/api/utilisateur/rechercherUser.php?email='+ this.login )
     .subscribe((data) => {
     this.movieData.password = data['password'];
+    this.movieData.id = data['id'];
     this.verifier();
   });
   }

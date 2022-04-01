@@ -12,13 +12,21 @@ export class HomePage {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.API()
+    if(localStorage.getItem('id')!=null){
+      this.idUtilisateur = localStorage.getItem('id');
+    }
+    if(sessionStorage.getItem('id')!=null){
+      this.idUtilisateur = sessionStorage.getItem('id');
+    }
+    console.log(this.idUtilisateur);
+    this.API();
   }
-
+ 
+  private idUtilisateur;
   public scoreList = [];
 
   API(){
-    this.http.get('http://localhost/api/resultats/rechercherScore.php?idUtilisateur=8') .subscribe((data) => { 
+    this.http.get('http://localhost/api/resultats/rechercherScore.php?idUtilisateur='+ this.idUtilisateur) .subscribe((data) => { 
       this.scoreList = Object.values(data['Resultats']);
       console.log(this.scoreList);
       this.ChartData = [
