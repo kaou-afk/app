@@ -20,9 +20,11 @@ export class HomePage {
     }
   
     this.API();
+    this.getPrenom();
   }
  
   private idUtilisateur;
+  private prenom;
   public scoreList = [];
 
   API(){
@@ -32,6 +34,12 @@ export class HomePage {
       this.ChartData = [
         {data: this.scoreList,borderColor: '#1DAEFF', pointRadius: 0,}
       ];
+    });
+  }
+
+  getPrenom(){
+    this.http.get('http://localhost/api/utilisateur/rechercherPrenom.php?id='+ this.idUtilisateur) .subscribe((data) => {
+      this.prenom = data['prenom'];
     });
   }
 
