@@ -16,6 +16,8 @@ export class SettingPage implements OnInit {
   Deconnexion(){
     localStorage.setItem('authenticated','0');
     sessionStorage.setItem('authenticated','0');
+    localStorage.clear();
+    sessionStorage.clear();
     this.router.navigateByUrl('/')
   }
 

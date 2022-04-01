@@ -18,7 +18,7 @@ export class HomePage {
     if(sessionStorage.getItem('id')!=null){
       this.idUtilisateur = sessionStorage.getItem('id');
     }
-    console.log(this.idUtilisateur);
+  
     this.API();
   }
  
