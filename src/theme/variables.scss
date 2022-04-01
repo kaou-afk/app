@@ -82,6 +82,17 @@
    * -------------------------------------------
    */
 
+   .dark
+   {
+     --theme-main-color: #1DAEFF;
+     --theme-background: #191C22;
+     --theme-icon-color: #C8C8D2;
+     --theme-texte-color: #FFFFFF;
+     --theme-input-texte-color: #3C484D;
+     --theme-input-warning: #CA3030;
+   }
+
+
   body {
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
@@ -232,5 +243,19 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+
+  .light
+  {
+    --theme-main-color: #1DAEFF;
+    --theme-background: #FFFFFF;
+    --theme-icon-color: #6D7072;
+    --theme-texte-color: #1D1D1D;
+    --theme-input-texte-color: #3C484D;
+    --theme-input-warning: #CA3030;
   }
 }
