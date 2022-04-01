@@ -19,15 +19,20 @@ export class LoginPage implements OnInit {
   movieData = {
     password: '',
   };
+
   login: string = '';
   password: string = '';
+  remember: boolean = false;
 
   onNativeChange(e) { // fonction afficher icon checkbox
     if(e.target.checked){
       document.getElementById('test').style.setProperty('display' , 'block');
+      this.remember = true;
+
     }
     else{
       document.getElementById('test').style.setProperty('display' , 'none');
+      this.remember = false;
     }
   }
 
@@ -43,8 +48,11 @@ export class LoginPage implements OnInit {
   verifier(){ // fonction vérifier mots et email
     if(this.movieData.password==this.chiffrer(this.password) && this.movieData.password!=null){
       console.log('ok');
-      localStorage.setItem('authenticated','1');
-      this.router.navigateByUrl('/home')
+      sessionStorage.setItem('authenticated','1');
+      if (this.remember){
+        localStorage.setItem('authenticated','1');
+      }
+      this.router.navigateByUrl('/home');
     }
     if(this.movieData.password!=this.chiffrer(this.password) && this.movieData.password!=null){
       console.log('password incorecte');

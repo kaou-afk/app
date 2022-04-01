@@ -36,6 +36,8 @@ export class ScorePage implements OnInit {
 
   Envoyer(){
     this.readAPI();
+    this.score=0;
+    this.AppComponent.reset();
   }
 
   public saveCode(e): void {  //afficher les nom dans la data list

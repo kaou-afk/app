@@ -18,35 +18,49 @@ export class HomePage {
   public scoreList = [];
 
   API(){
-    this.http.get('http://localhost/api/resultats/rechercherScore.php?idUtilisateur=1') .subscribe((data) => { 
+    this.http.get('http://localhost/api/resultats/rechercherScore.php?idUtilisateur=8') .subscribe((data) => { 
       this.scoreList = Object.values(data['Resultats']);
       console.log(this.scoreList);
-      this.barChartData = [
-        {data: this.scoreList,borderColor: '#1DAEFF', pointBackgroundColor: 'rgba(148,159,177,1)',
-        pointBorderColor: '#fff',}
+      this.ChartData = [
+        {data: this.scoreList,borderColor: '#1DAEFF', pointRadius: 0,}
       ];
     });
   }
 
-  public barChartData :Array<any> = [];
-  public barChartLabels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-  public barChartType = 'line';
-  public barChartLegend = false;
-  public lineChartOption = {
+  public ChartData :Array<any> = [];
+  public ChartLabels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+  public ChartType = 'line';
+  public ChartLegend = false;
+  public ChartOption = {
     responsive: true,
+    elements: {
+      line: {
+          tension: 0.3,
+      }
+  },
+
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
-      x: {},
-      'y-axis-0':
+      x: {
+        grid: {
+          color: 'rgba(255, 255, 255, 0.2)',
+        },
+        ticks: {
+          color: 'rgba(255, 255, 255, 0.5)',
+        },
+      },
+      y:
         {
+          min: 0,
+          max: 100,
           position: 'left',
           grid: {
-            color: 'rgba(255,0,0,0.3)',
+            color: 'rgba(255, 255, 255, 0.2)',
           },
+          
           ticks: {
-            color: 'red',
-            max : 100,
-          }
+            color: 'rgba(255, 255, 255, 0.5)',
+          },
         },
       },
   
