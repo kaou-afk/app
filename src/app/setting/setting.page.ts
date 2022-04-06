@@ -11,12 +11,12 @@ export class SettingPage implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if(localStorage.getItem('theme')=='dark'){
+    if(localStorage.getItem('theme') === 'dark'){
         (document.getElementById('light')as HTMLInputElement).checked = false ;
         (document.getElementById('dark')as HTMLInputElement).checked = true ;
     }
 
-    if(sessionStorage.getItem('theme')=='light'){
+    if(localStorage.getItem('theme') === 'light'){
       (document.getElementById('dark')as HTMLInputElement).checked = false ;
       (document.getElementById('light')as HTMLInputElement).checked = true ;
     }
