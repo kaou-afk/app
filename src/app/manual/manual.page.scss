@@ -4,8 +4,8 @@
     justify-content: space-around;
     height: 76px;
     align-items: center;
-    background-color: #191C22;
-    color: #C8C8D2;
+    background-color: var(--theme-tabbar-background);
+    color: var(--theme-icon-color);
   }
   
   .TabBarIcon{
@@ -27,7 +27,7 @@
     font-size: 34px;
     line-height: 42px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--theme-texte-color);
     
   }
 

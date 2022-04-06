@@ -40,7 +40,7 @@
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--theme-texte-color);
     margin-top: 0px;
   }
   .Form{
@@ -55,7 +55,7 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
-      color: #FFFFFF;
+      color: var(--theme-texte-color);
       margin-left: 25px;
   }
 
@@ -88,7 +88,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 29.05px;
-      background: #1DAEFF;
+      background: var(--theme-main-color);
   }
   label{
       position: absolute;

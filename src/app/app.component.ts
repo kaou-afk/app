@@ -13,6 +13,19 @@ export class AppComponent {
 
   constructor() {
     this.score= 0;
+    if(localStorage.getItem('theme')=='dark'){
+      document.body.setAttribute('color-theme','dark');
+    }
+
+    else if(sessionStorage.getItem('theme')=='light'){
+      document.body.setAttribute('color-theme','light');
+    }
+
+    else{
+      document.body.setAttribute('color-theme','dark');
+      console.log(localStorage.getItem('theme'));
+    }
+   
   }
   ngOnInit() {}
 

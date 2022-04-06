@@ -4,8 +4,8 @@
   justify-content: space-around;
   height: 76px;
   align-items: center;
-  background-color: #191C22;
-  color: #C8C8D2;
+  background-color: var(--theme-tabbar-background);
+  color: var(--theme-icon-color);
 }
 
 .TabBarIcon{
@@ -13,7 +13,7 @@
 }
 
 #Home{
-  color: #1DAEFF;
+  color: var(--theme-main-color);
 }
 
 .t1{
@@ -22,7 +22,7 @@
   font-size: 34px;
   line-height: 42px;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: var(--theme-texte-color);
   position: relative;
 }
 
@@ -54,7 +54,7 @@
 
   letter-spacing: -0.015em;
 
-  color: #FFFFFF;
+  color: var(--theme-texte-color);
 }
 
 .t3{
@@ -67,5 +67,5 @@
 
   letter-spacing: -0.055em;
 
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--theme-subtexte-color);
 }

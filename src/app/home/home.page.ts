@@ -59,10 +59,10 @@ export class HomePage {
       // We use this empty structure as a placeholder for dynamic theming.
       x: {
         grid: {
-          color: 'rgba(255, 255, 255, 0.2)',
+          color: '#8c8e91',
         },
         ticks: {
-          color: 'rgba(255, 255, 255, 0.5)',
+          color: '#8c8e91',
         },
       },
       y:
@@ -71,11 +71,11 @@ export class HomePage {
           max: 100,
           position: 'left',
           grid: {
-            color: 'rgba(255, 255, 255, 0.2)',
+            color: '#8c8e91',
           },
           
           ticks: {
-            color: 'rgba(255, 255, 255, 0.5)',
+            color: '#8c8e91',
           },
         },
       },
