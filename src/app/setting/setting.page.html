@@ -3,14 +3,14 @@
   <div class="sombreContainer">
     <p class="t2">Mode sombre</p>
     <label class="slideTwo" id="dark">	
-      <input type="radio" value="None" name="theme" (change)="onDarkChange($event)" checked />
+      <input type="radio" name="theme" (change)="onDarkChange($event)" [(ngModel)]="checked" value="dark"/>
       <div></div>
     </label>
   </div>
   <div class="clairContainer">
     <p class="t2">Mode clair</p>
     <label class="slideTwo" id="light">	
-      <input type="radio" value="None" name="theme" (change)="onLightChange($event)" />
+      <input type="radio" name="theme" (change)="onLightChange($event)" [(ngModel)]="checked" value="light"/>
       <div></div>
     </label>
   </div>

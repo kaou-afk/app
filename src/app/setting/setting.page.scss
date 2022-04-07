@@ -82,16 +82,7 @@
   input[type=radio]{
     display: none;
   }
-  #dark{
-    background: #1DAEFF;
-  }
-
-  #light{
-    background: #616161;
-  }
-
   
-
   .slideTwo input[type=radio]:checked + div {
     left: 27.57px;
   }

@@ -7,26 +7,35 @@ import {Router} from '@angular/router';
   styleUrls: ['./setting.page.scss'],
 })
 export class SettingPage implements OnInit {
+  checked : string;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     if(localStorage.getItem('theme') === 'dark'){
-        (document.getElementById('light')as HTMLInputElement).checked = false ;
-        (document.getElementById('dark')as HTMLInputElement).checked = true ;
+      this.checked = 'dark';
+      document.getElementById('dark').style.setProperty('background', '#1DAEFF');
+      document.getElementById('light').style.setProperty('background' , '#616161');
     }
 
-    if(localStorage.getItem('theme') === 'light'){
-      (document.getElementById('dark')as HTMLInputElement).checked = false ;
-      (document.getElementById('light')as HTMLInputElement).checked = true ;
+    else if(localStorage.getItem('theme') === 'light'){
+      this.checked = 'light';
+      document.getElementById('light').style.setProperty('background' , '#1DAEFF');
+      document.getElementById('dark').style.setProperty('background', '#616161');
+    }
+
+    else{
+      this.checked = 'dark';
+      document.getElementById('dark').style.setProperty('background', '#1DAEFF');
+      document.getElementById('light').style.setProperty('background' , '#616161');
     }
   }
 
   Deconnexion(){
     localStorage.setItem('authenticated','0');
     sessionStorage.setItem('authenticated','0');
-    localStorage.clear();
-    sessionStorage.clear();
+    localStorage.removeItem('id');
+    sessionStorage.removeItem('id');
     this.router.navigateByUrl('/')
   }
 
@@ -49,3 +58,10 @@ export class SettingPage implements OnInit {
   }
 }
 
+
+
+
+
+       
+
+ 
