@@ -8,11 +8,14 @@ import { ManualPageRoutingModule } from './manual-routing.module';
 
 import { ManualPage } from './manual.page';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     ManualPageRoutingModule
   ],
   declarations: [ManualPage]

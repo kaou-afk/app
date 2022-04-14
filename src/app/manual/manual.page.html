@@ -2,19 +2,19 @@
 <div class="container">
   <p class="t1">Choisir la cible ou les cibles a afficher</p>
   <div class="cibleContainer">
-      <button type="button" class="cible">
+      <button type="button" class="cible" (click)="cible1_1()">
         <img id="c1_1" src="/assets/cible2.png">
       </button>
-      <button type="button" class="cible">
+      <button type="button" class="cible" (click)="cible1_2()">
         <img id="c1_2" src="/assets/cible1.png">
       </button>
   </div>
   <div class="cibleContainer">
-    <button type="button" class="cible">
+    <button type="button" class="cible" (click)="cible2_1()">
       <img id="c2_1" src="/assets/cible2.png">
     </button>
     <button type="button" class="cible">
-      <img id="c2_2" src="/assets/cible1.png">
+      <img id="c2_2" src="/assets/cible1.png" (click)="cible2_2()">
     </button>
   </div>
   <div class="scoreContainer">
