@@ -15,7 +15,6 @@ export class ManualPage implements OnInit {
     this.score=AppComponent.getScore();
     this.sMax=AppComponent.getSMax();
     this.ratio=AppComponent.getRatio();
-    console.log(this.ratio);
   }
 
   ngOnInit() {
