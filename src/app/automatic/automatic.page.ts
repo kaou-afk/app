@@ -23,7 +23,7 @@ export class AutomaticPage implements OnInit, OnDestroy {
     this.AppComponent.addScore();
   }
   decremente(){// décrémenter score -1
-    this.score = this.score-1;
+    this.score = this.score-5;
     this.AppComponent.susScore();
   }
   startAutoMode(){
