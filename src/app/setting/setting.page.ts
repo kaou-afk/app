@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-setting',
@@ -9,9 +11,10 @@ import {Router} from '@angular/router';
 export class SettingPage implements OnInit {
   checked : string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,public navCtrl: NavController ) { }
 
   ngOnInit() {
+    //initialiser radio 
     if(localStorage.getItem('theme') === 'dark'){
       this.checked = 'dark';
       document.getElementById('dark').style.setProperty('background', '#1DAEFF');
@@ -36,9 +39,11 @@ export class SettingPage implements OnInit {
     sessionStorage.setItem('authenticated','0');
     localStorage.removeItem('id');
     sessionStorage.removeItem('id');
-    this.router.navigateByUrl('/')
+    this.navCtrl.navigateForward('/');
+
   }
 
+  //changer theme en dark mode
   onDarkChange(e){
     if(e.target.checked){
       document.getElementById('dark').style.setProperty('background', '#1DAEFF');
@@ -48,6 +53,8 @@ export class SettingPage implements OnInit {
     
     }
   }
+
+  //changer theme en light mode
   onLightChange(e){
     if(e.target.checked){
       document.getElementById('light').style.setProperty('background' , '#1DAEFF');
