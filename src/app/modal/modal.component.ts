@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from "@ionic/angular";
 
-
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
@@ -9,7 +8,7 @@ import { ModalController } from "@ionic/angular";
 })
 export class ModalComponent implements OnInit {
 
-  constructor(public modalCtrl: ModalController) { }
+ constructor(public modalCtrl: ModalController) { }
 
   ngOnInit() {}
 
@@ -19,5 +18,4 @@ closeModal() {
     dismissed: true
   });
 }
-
 }

@@ -1,11 +1,40 @@
 <div class="container">
-  <p class="t7">
-    Cible 1:
-    </p>
-    <p class="t7">
-    Cible 2:
-    </p>
-  <div class="btn-wrapper">
-    <button type="button" class="btn" (click)="closeModal()">Valider</button>
+  <p>cible ligne 1</p>
+  <div class="containeur">
+    <article class="feature4">
+      <input
+        type="radio" name="cible1"/>
+      <div>
+        <span> toucher </span>
+      </div>
+    </article>
+
+    <article class="feature4">
+      <input
+        type="radio" name="cible1"/>
+      <div>
+        <span> non toucher </span>
+      </div>
+    </article>
   </div>
+
+  <p>cible ligne 2</p>
+  <div class="containeur">
+    <article class="feature4">
+      <input
+        type="radio" name="cible2"/>
+      <div>
+        <span> toucher </span>
+      </div>
+    </article>
+
+    <article class="feature4">
+      <input
+        type="radio" name="cible2"/>
+      <div>
+        <span> non toucher </span>
+      </div>
+    </article>
+  </div>
+  <button class="button" ion-button (click)="closeModal()">+</button>
 </div>

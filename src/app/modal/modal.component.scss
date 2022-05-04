@@ -59,3 +59,59 @@
     color: var(--theme-texte-color);
     margin-top: 10px;
 }
+.button {
+  bottom: 0px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-top: 50px;
+}
+
+article {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  margin: 5px;
+  float: left;
+  border: 2px solid #50bcf2;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: 0.5s ease;
+}
+
+article input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+input[type='radio']:checked ~ div {
+  border-radius: 11px;
+  background-color: #50bcf2;
+}
+
+.containeur {
+  display: flex;
+  justify-content: space-evenly;
+}
